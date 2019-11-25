@@ -12,7 +12,7 @@ If you don't already have Python 3+ installed, get it here: <https://www.python.
 On <https://github.com/Shaniamoro/Caesar-Cipher->, click the "Clone or Download" button at the top right of the page or click the "Download ZIP" button, and extract the folder on your computer.
 
 ### 4. Install Dependencies
-If you don't already have Phython's Flask Plugin on your device, in the terminal navigate to the directory containing this repository's files. Then, type the following: 
+If you don't already have Python's Flask Plugin on your device, in the terminal navigate to the directory containing this repository's files. Then, type the following: 
 
 ```
 pip install -r requirements.txt
