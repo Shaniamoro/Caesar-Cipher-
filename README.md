@@ -1,5 +1,4 @@
 # Keyed Caesar Cipher
----
 _Author: Shania M. Roberts_  
 
 Contains a full-stack implementation of a Caesar Cipher program
