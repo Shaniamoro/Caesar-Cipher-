@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en-us">
+<head>
+    <title> Keyed Caesar Cipher </title>
+    <meta name="description" content="An introduction into Ciphers">
+    <meta name="author" content="Shania Roberts">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Keyed Caesar Cipher</h1>
+        <p class="container">
+            This module includes an implementation of the Keyed Caesar cipher.
+            The Keyed Caesar Cipher involves encrypting messages through the use of an encryption "key". The key is just a
+            word which is used to encrypt your message.
+            More information on the Keyed Caesar Cipher can be found
+            <a href="http://rumkin.com/tools/cipher/caesar-keyed.php" target="_blank" rel="noreferrer noopener">here</a>.
+        </p>
+    </header>
+
+
+<div class="card">
+    <div class="card-details">
+        <h2 class="card-head">Give It A Try!</h2>
+        <p>The program accepts a users key and message and either encodes
+            or decodes the
+            message</p>
+        <form method="POST">
+            <div class="form-group">
+                <label for="user-key">Encryption Key</label>
+                <input type="text" class="form-control" name="user-key" id="user-key" aria-describedby="key-help"
+                       placeholder="Enter your key here." pattern="^[a-zA-Z]+$" autofocus required>
+                <small id="key-help" class="form-text text-muted">A good key consists of many unique letters.<i> Ex.
+                    subdermatoglyphic </i></small>
+            </div>
+            <div class="form-group">
+                <label for="user-message">Enter Your Message Here</label>
+                <textarea class="form-control" rows="4" name="user-message" id="user-message"
+                          placeholder="Enter your message here." required></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" name="user-val" value="E" class="btn btn-outline-secondary">
+                    Encode
+                </button>
+                <button type="submit" name="user-val" id="user-val" value="D" class="btn btn-dark">Decode
+                </button>
+            </div>
+            {% if result_message|length %}
+                <p>{{ result_message }}</p>
+            {% endif %}
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <p> &copy; Shania M. Roberts 2019 </p>
+</footer>
+
+
+</body>
+</html>
