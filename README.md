@@ -26,12 +26,10 @@ python app.py
 
 ### 6. Review the Results
 
-The script will generate a HTML file named `index.html`. Once the script completes go to the following address in your browser <http://127.0.0.1:5000/>
+Once the script completes go to the following address in your browser <http://127.0.0.1:5000/> and enjoy Encoding your messages.
 
 ## Running The Tests
 Unit testing was implemented to ensure the accuracy of the results, the test file can be found in the tests folder.
-
-
 
 
 ## Author
